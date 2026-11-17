@@ -1,0 +1,14 @@
+
+clusterName: vm-to-eks-dev
+
+region: ap-south-1
+
+# Replace after Terraform provisions the VPC
+vpcId: REPLACE_WITH_TERRAFORM_VPC_ID
+
+replicaCount: 2
+
+serviceAccount:
+  create: false
+  name: aws-load-balancer-controller
+
